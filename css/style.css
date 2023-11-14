@@ -21,7 +21,7 @@ section{
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0 0 15px;
-  color: #0e1555;
+  color: #e1ad01;
 }
 
 h1 {
@@ -291,7 +291,7 @@ button:focus,.btn:focus,.btn:active:focus {
 }
 
 .main-menu .nav li a:hover,.main-menu .nav li.active a {
-  color: darkgreen;
+  color: #f81894;
   /*border-bottom: 2px darkgreen solid;*/
   background: transparent;
 }
@@ -358,8 +358,8 @@ button:focus,.btn:focus,.btn:active:focus {
  *-------------------*/
 
 .jumbotron {
-  background-color: dimgrey;
-  background: url("../assets/lotus_temple_2_overlay.jpg");
+  background-color: rgba(44, 44, 44,.5);
+  background: url("../assets/alumni-center-damask-new-1030x604.jpg");
   opacity: 0.7;
   background-size: cover;
   padding: 0;
@@ -391,7 +391,7 @@ button:focus,.btn:focus,.btn:active:focus {
 }
 
 .jumbotron .content h1 {
-  color: lightblue;
+  color: #1aaaff;
   font-family: 'Roboto', SansSerif;
   font-weight: 300;
 }
@@ -498,7 +498,7 @@ button:focus,.btn:focus,.btn:active:focus {
 
 .section-heading{
   text-align: left;
-  color: #1b6d85;
+  color: #1aaaff;
   font-family: "Playfair Display";
   font-size: 3.5em;
 }

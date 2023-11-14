@@ -30,12 +30,12 @@ else {
 // Google Maps
 function initializeMap() {
     var location = {
-        lat: 28.750075,
-        lng: 77.117665
+        lat: 25.711258201855323,
+        lng:  -80.28372642210127
     };
     var api_key = 'AIzaSyDaLNdW2DwXDOch4rEs9C0hP-Amc4RVYPE ';
     var map = new google.maps.Map(document.getElementById('googleMap'), {
-        zoom: 15,
+        zoom: 18,
         center: location
     });
     var markerIcon = 'google-map-marker.png';
