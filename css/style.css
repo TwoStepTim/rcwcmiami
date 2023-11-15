@@ -359,8 +359,8 @@ button:focus,.btn:focus,.btn:active:focus {
 
 .jumbotron {
   background-color: rgba(44, 44, 44,.5);
-  background: url("../assets/alumni-center-damask-new-1030x604.jpg");
-  opacity: 0.7;
+  background: url("../assets/robert-judi-newman-alumni-center-10\ \(1\).jpg");
+  opacity: .8;
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -375,7 +375,7 @@ button:focus,.btn:focus,.btn:active:focus {
 
 .jumbotron .content {
   opacity: 1;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   top: 40%;
   left: 0;
@@ -416,12 +416,15 @@ button:focus,.btn:focus,.btn:active:focus {
   margin-top: 70px;
 }
 .jumbotron .content .event-date {
+  color: navajowhite;
   margin-bottom: 10px;
-  font-weight: 100;
+  font-weight: 400;
 }
 .jumbotron .content .college{
+  font-weight: 425;
+  color: rgb(214, 23, 239);
   font-size: 0.9em;
-  font-weight: 100;
+  opacity: 1;
 }
 
 .jumbotron .btn {
