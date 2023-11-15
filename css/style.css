@@ -661,7 +661,10 @@ Keynote Speakers
 /* ----------------------------------------------
  * Team Section
  *-----------------------------------------------*/
-
+.QuestionsAsked p{
+  font-family: "Roboto", sans-serif;
+font-weight: 400;
+}
 .team{
     color: #000;
     font-weight: 300;
@@ -741,14 +744,13 @@ Keynote Speakers
 }
 
 .list-box{
-  display: flex;
-  flex-wrap: wrap;
+  display: list-item;
   background-color: transparent;
   margin-bottom: 30px;
 }
 
 .list-box-item{
-  display: inline-block;
+  display:list-item;
   margin-right: 30px;
   margin-bottom: 5px;
   font-size: 1.1em;
@@ -1116,15 +1118,74 @@ Places to Explore
 /*------------------
 About
 ------------------*/
+..partners {
+  overflow: hidden;
+}
+
+.partner-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  justify-content: flex-start; /* Start from the left */
+  animation: scrollText 15s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  to {
+    transform: translateX(-100%); /* Move off-screen to the left */
+  }
+}
+
+/* Additional styling (adjust as needed) */
+.partners {
+  background: rgb(234, 0, 211);
+  color: white;
+  padding: 1em;
+}
+
+.partner-title p {
+  font-weight: 600;
+  font-size: 1.5em;
+  align-self: center;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.partner-title::after {
+  content: '';
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+  width: 2.5em;
+  height: 1px;
+  background: var(--accent-color);
+}
+
+.partner-group > p {
+  font-size: 2em;
+  margin: 1em 0.3em;
+}
 #about{
   min-height: 100vh;
-  background-image: url("../assets/flower-group/flower-group.png");
+  background-image: url("../assets/Engagement.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 100% 100px;
-    background-attachment: fixed;
+  background-attachment:scroll
+    
 }
+@media (min-width: 360px) and (max-width: 1220px) {
+  #about{
+    background-image: url("");
 
+
+  }
+
+}
 .table-borderless{
   font-size: 1.1em;
   border: none;
