@@ -1118,56 +1118,65 @@ Places to Explore
 /*------------------
 About
 ------------------*/
-..partners {
-  overflow: hidden;
-}
-
-.partner-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  justify-content: flex-start; /* Start from the left */
-  animation: scrollText 15s linear infinite; /* Adjust the duration as needed */
-}
-
-@keyframes scrollText {
+@keyframes slide {
   from {
-    transform: translateX(100%); /* Start off-screen to the right */
+      transform: translateX(0);
   }
-  to {
-    transform: translateX(-100%); /* Move off-screen to the left */
+  to{
+      transform: translateX(-100%);
+
   }
 }
-
-/* Additional styling (adjust as needed) */
-.partners {
-  background: rgb(234, 0, 211);
-  color: white;
-  padding: 1em;
-}
-
-.partner-title p {
-  font-weight: 600;
-  font-size: 1.5em;
+.partner-title h1 {
+ 
+  color: #1aaaff;
   align-self: center;
   text-align: center;
   margin-top: 1em;
 }
-
-.partner-title::after {
-  content: '';
-  display: block;
+.logos  p {
+  font-size: 3em;
+  font-size: 800;
+  font-family: "Roboto", sans-serif;
+  margin: 1em 0.3em;
+  color: white;
+}
+.logos{
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  background: rgb(234, 0, 211);
   position: relative;
-  margin: 0 auto;
-  bottom: 0;
-  width: 2.5em;
-  height: 1px;
-  background: var(--accent-color);
+}
+.logos:before,
+.logos:after{
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+
+}
+.logos:before{
+  left: 0;
+  background: linear-gradient(to left,rgba(255,255,255,0),white);
+}
+.logos:after{
+  right: 0;
+  background: linear-gradient(to right,rgba(255,255,255,0),white);
 }
 
-.partner-group > p {
-  font-size: 2em;
-  margin: 1em 0.3em;
+.logos:hover .logos-slide{
+  animation-play-state:paused ;
+}
+.logos-slide{
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+.logos-slide img{
+  height: 26vh;
+  margin: 0 40px;
 }
 #about{
   min-height: 100vh;
