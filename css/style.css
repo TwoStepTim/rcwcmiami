@@ -372,7 +372,9 @@ button:focus,.btn:focus,.btn:active:focus {
   background-position: center center;
   overflow: hidden;
 }
-
+.navbar-brand-container h1{
+  width: 20vw;
+}
 .jumbotron .content {
   opacity: 1;
   color: #ffffff;
@@ -456,7 +458,7 @@ button:focus,.btn:focus,.btn:active:focus {
   display: block;
   font-family: "Playfair Display";
   font-size: 7em;
-  color: yellowgreen;
+  color: rgb(214, 23, 239);
 }
 #date-reminder-right-container{
   display: block;
@@ -793,12 +795,10 @@ font-weight: 400;
 .contact-card{
   border-radius: 15px;
   box-shadow: #5bc0de;
-
   text-align: center;
   display: block;
-  width: 300px;
+  width: 250px;
   margin: 50px;
-
   box-shadow: 0 0 40px 1px lightgray;
   transition: box-shadow 0.3s;
 }
