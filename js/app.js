@@ -5,7 +5,7 @@ var dateReminderRightContainer = $('#date-reminder-right-container');
 var navbarDateUpdater = $('#navbar-brand-container-lower-heading');
 console.log(dateUpdater);
 
-var conferenceDate = new Date('11/23/2024');
+var conferenceDate = new Date('01/24/2024');
 var currentDate = new Date();
 var dateDifference = conferenceDate.getTime() - currentDate.getTime();
 var day = 1000 * 60 * 60 * 24;
