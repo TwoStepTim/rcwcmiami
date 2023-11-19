@@ -8,6 +8,7 @@ body {
   background: #ffffff;
   border: 0;
   margin: 0;
+  
 }
 
 section{
@@ -237,7 +238,9 @@ button:focus,.btn:focus,.btn:active:focus {
   .navbar-brand {
     width: 200px;
   }
-
+  .body{
+    padding: 10px;
+  }
   .navbar-brand img {
     max-width: 100%;
     height: auto;
@@ -381,6 +384,9 @@ button:focus,.btn:focus,.btn:active:focus {
 .navbar-brand-container h1{
   width: 20vw;
 }
+
+  
+
 .jumbotron .content {
   opacity: 1;
   color: #ffffff;
@@ -396,12 +402,16 @@ button:focus,.btn:focus,.btn:active:focus {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4); /* Add this line for the background color */
+  z-index: 1; /* Add this line to ensure it's above the background color */
+
 }
 
 .jumbotron .content h1 {
   color: #1aaaff;
   font-family: 'Roboto', SansSerif;
   font-weight: 300;
+  
 }
 
 .jumbotron .content h3 {
@@ -422,6 +432,10 @@ button:focus,.btn:focus,.btn:active:focus {
   margin-bottom: 40px;
   color: navajowhite;
   margin-top: 70px;
+  background-color: rgba(0, 0, 0, 0.4); /* Add this line for the background color */
+  padding: 0px; 
+  z-index: 2; /* Add this line to ensure it's above the background color */
+
 }
 .jumbotron .content .event-date {
   color: navajowhite;
@@ -430,9 +444,12 @@ button:focus,.btn:focus,.btn:active:focus {
 }
 .jumbotron .content .college{
   font-weight: 425;
+  background-clip: padding-box;
   color: rgb(214, 23, 239);
   font-size: 0.9em;
   opacity: 1;
+
+  
 }
 
 .jumbotron .btn {
@@ -465,6 +482,7 @@ button:focus,.btn:focus,.btn:active:focus {
   font-family: "Playfair Display";
   font-size: 7em;
   color: rgb(214, 23, 239);
+  
 }
 #date-reminder-right-container{
   display: block;
@@ -481,7 +499,11 @@ button:focus,.btn:focus,.btn:active:focus {
   font-family: "Playfair Display";
   font-size: 1.8em;
 }
-
+ul.Topic-list  {
+  
+    list-style-type: circle;
+  
+}
 /*---------------------------
  * Section Wrapper
  *---------------------------*/
@@ -519,7 +541,6 @@ button:focus,.btn:focus,.btn:active:focus {
  *-----------------------------------------------*/
 #section-intro{
   overflow: hidden;
-  background-image: url("../assets/people-1.png");
   background-repeat: no-repeat;
   background-size: 16%;
   background-position: 1350px 1000px;
