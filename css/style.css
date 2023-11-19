@@ -90,6 +90,12 @@ p.lead {
   line-height: 1.7em;
 }
 
+p.lead2 {
+  text-indent: 50px;
+  font-size: 19px;
+  line-height: 1.7em;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -359,7 +365,7 @@ button:focus,.btn:focus,.btn:active:focus {
 
 .jumbotron {
   background-color: rgba(44, 44, 44,.5);
-  background: url("../assets/robert-judi-newman-alumni-center-10\ \(1\).jpg");
+  background: url("../assets/Kid.jpg");
   opacity: .8;
   background-size: cover;
   padding: 0;
