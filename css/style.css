@@ -8,7 +8,7 @@ body {
   background: #ffffff;
   border: 0;
   margin: 0;
-  margin-left: 10px;
+
 }
 
 section{
@@ -177,7 +177,9 @@ button:focus,.btn:focus,.btn:active:focus {
   background: #ffffff;
   overflow: hidden;
 }
-
+.Allcontent{
+  padding: 20px;
+}
 .bottom-padding{
   padding-bottom: 40px;
 }
@@ -399,20 +401,45 @@ button:focus,.btn:focus,.btn:active:focus {
  * Jumbotron
  *-------------------*/
 
-.jumbotron {
-  background-color: rgba(44, 44, 44,.5);
-  background: url("../assets/Kid.jpg");
-  opacity: .8;
-  background-size: cover;
-  padding: 0;
-  margin: 0;
-  min-height: 100vh;
-  vertical-align: middle;
+ .jumbotron {
   position: relative;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
   overflow: hidden;
+  min-height: 100vh;
+  background: url("../assets/Kid.jpg") center center/cover no-repeat fixed;
+}
+
+.jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity as needed */
+}
+
+.jumbotron .content {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  height: 30%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10%;
+  font-weight: 400;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  z-index: 1;
+  color: #ffffff;
+}
+
+.jumbotron .content h1,
+.jumbotron .content h3 {
+  color: #1aaaff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .navbar-brand-container h1{
   width: 20vw;
@@ -435,15 +462,14 @@ button:focus,.btn:focus,.btn:active:focus {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4); /* Add this line for the background color */
   z-index: 1; /* Add this line to ensure it's above the background color */
-
+  
 }
 
 .jumbotron .content h1 {
   color: #1aaaff;
   font-family: 'Roboto', SansSerif;
-  font-weight: 300;
+  font-weight: 600;
   
 }
 
@@ -452,6 +478,7 @@ button:focus,.btn:focus,.btn:active:focus {
   font-weight: 200;
   font-size: 2em;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 .jumbotron .content p.lead {
@@ -465,7 +492,6 @@ button:focus,.btn:focus,.btn:active:focus {
   margin-bottom: 40px;
   color: navajowhite;
   margin-top: 70px;
-  background-color: rgba(0, 0, 0, 0.4); /* Add this line for the background color */
   padding: 0px; 
   z-index: 2; /* Add this line to ensure it's above the background color */
 
@@ -1319,6 +1345,14 @@ About
   #about{
     background-image: url("");
 
+
+  }
+
+}
+@media (max-width: 1520px) {
+  #about{
+    background-image: url("/img/RCWCMIAMI-BK.png");
+    background-size: 60%;
 
   }
 
