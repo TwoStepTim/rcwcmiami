@@ -237,14 +237,36 @@ button:focus,.btn:focus,.btn:active:focus {
 @media (max-width: 768px) {
   .navbar-brand {
     width: 200px;
+    
   }
-  .body{
+  .jumbotron .content h1{
+    margin-top: 20px;
+  }
+  .h1,h2,h3,h4,h5,h6,p{
+    padding: 10px;
+  }
+  .Topic-list{
+    padding: 10px;
+  }
+  .list-box{
     padding: 10px;
   }
   .navbar-brand img {
     max-width: 100%;
     height: auto;
   }
+  .map-container{
+    display: block;
+  }
+  .footer-address-container{
+    margin-bottom: 50px;
+    text-align: center;
+  }
+ .Copyright{
+  margin-top: 20px;
+    margin-right: 50px;
+  }
+ 
 }
 
 /*navbar*/
@@ -261,6 +283,9 @@ button:focus,.btn:focus,.btn:active:focus {
 @media (max-width: 768px) {
   .navbar {
     padding: 10px;
+  }
+  #navbar-brand-container-lower-heading{
+    width: auto;
   }
 }
 
@@ -319,7 +344,9 @@ button:focus,.btn:focus,.btn:active:focus {
   .main-menu .nav li {
     text-align: center;
   }
-
+  .body{
+    margin-left: 5px;
+  }
   .main-menu .nav li a {
     padding: 5px 0;
     color: #0e1555;
@@ -460,7 +487,9 @@ button:focus,.btn:focus,.btn:active:focus {
   .jumbotron .content {
     min-height: auto;
   }
-
+  #date{
+    width: auto;
+  }
   .jumbotron .content h1 {
     font-size: 26px;
   }
@@ -1295,6 +1324,8 @@ Venue
     float: left;
     margin-top: 20px;
   }
+  
+ 
   .applied-mathematics-content{
     width: 100%;
     max-width: 100%;
@@ -1668,18 +1699,7 @@ Footer
  *   Footer
  *---------------------------------------------- */
 
-/* Copyright */
 
-.footer .copyright-section {
-  font-size: 13px;
-  color: #888888;
-  padding: 30px 0;
-}
-
-.footer .copyright-section .copytext {
-  font-weight: 400;
-  display: block;
-}
 
 /* ---------------------------------------------- /*
  * Preloader
