@@ -4,11 +4,11 @@ body {
   font-size: 17px;
   line-height: 1.7em;
   color: #353e55;
-  font-weight: 100;
+  font-weight: 400;
   background: #ffffff;
   border: 0;
   margin: 0;
-  
+  margin-left: 10px;
 }
 
 section{
@@ -203,6 +203,12 @@ button:focus,.btn:focus,.btn:active:focus {
   margin-left: 100px;
   background-color: transparent;
 }
+.navbar-header img{
+  width: 10vw;
+  mix-blend-mode: darken;
+  border-radius: 900px;
+
+}
 .navbar-brand-container {
   display: flex;
   flex-direction: column;
@@ -234,7 +240,7 @@ button:focus,.btn:focus,.btn:active:focus {
   margin-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .navbar-brand {
     width: 200px;
     
@@ -529,8 +535,9 @@ button:focus,.btn:focus,.btn:active:focus {
   font-size: 1.8em;
 }
 ul.Topic-list  {
-  
-    list-style-type: circle;
+  font-weight: 400;
+  list-style-type: circle;
+  margin-right: 0px;
   
 }
 /*---------------------------
@@ -578,7 +585,9 @@ ul.Topic-list  {
   width: 100%;
   margin-bottom: 20px;
 }
-
+#event-details p{
+  font-size: 400;
+}
 .about-event .lead {
   font-size: 19px;
   line-height: 1.7em;
@@ -846,20 +855,21 @@ font-weight: 400;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
-  /*background-color: whitesmoke;*/
+  
 }
 .contact-card{
   border-radius: 15px;
   box-shadow: #5bc0de;
   text-align: center;
   display: block;
-  width: 250px;
+  width: 270px;
   margin: 50px;
   box-shadow: 0 0 40px 1px lightgray;
   transition: box-shadow 0.3s;
+  background-color: #debf5c;
 }
 .contact-card:hover{
-  box-shadow: 0 0 40px 1px lightcoral;
+  box-shadow: 0 0 40px 1px rgb(246, 130, 238);
 }
 .contact-card img{
   height: 140px;
@@ -894,6 +904,12 @@ font-weight: 400;
   color: darkred;
 }
 
+.contact-card-email{
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 /*-------------------
 Important Dates
 ---------------------*/
@@ -901,6 +917,62 @@ Important Dates
 }
 #important-dates table{
   margin-top: 50px;
+}
+.open-popup-btn {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.open-popup-btn:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.open-popup-btn:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.open-popup-btn:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
 }
 
 /*--------------------
@@ -1743,8 +1815,11 @@ Footer
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  
 }
-
+.popup-container{
+  font-weight: 400;
+}
 .popup-content {
   position: absolute;
   top: 50%;
