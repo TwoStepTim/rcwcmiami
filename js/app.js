@@ -1,3 +1,21 @@
+// Function to open the popup
+function openPopup(popupId) {
+    document.getElementById(popupId).style.display = 'block';
+  }
+  
+  // Function to close the popup
+  function closePopup(popupId) {
+    document.getElementById(popupId).style.display = 'none';
+  }
+  
+  // Attach click event to the "View Bio" buttons
+  document.querySelectorAll('.open-popup-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+      var popupId = this.getAttribute('data-popup-id');
+      openPopup(popupId);
+    });
+  });
+  
 "use strict";
 
 var dateUpdater = $('#date');
@@ -46,3 +64,6 @@ function initializeMap() {
         icon: markerIcon
     });
 }
+
+
+  
