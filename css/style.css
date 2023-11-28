@@ -422,11 +422,20 @@ button:focus,.btn:focus,.btn:active:focus {
  * Jumbotron
  *-------------------*/
 
- .jumbotron {
-  position: relative;
-  overflow: hidden;
+  .jumbotron {
+  background-color: dimgrey;
+  background: url("../assets/Kid.jpg");
+  opacity: 0.7;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
   min-height: 100vh;
-  background: url("../assets/Kid.jpg") center center/cover no-repeat fixed;
+  vertical-align: middle;
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
 }
 
 
