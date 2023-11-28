@@ -56,7 +56,7 @@ function initializeMap() {
         zoom: 18,
         center: location
     });
-    var markerIcon = 'google-map-marker.png';
+    var markerIcon = 'Google_Maps_Pin.png';
     var marker = new google.maps.Marker({
         position: location,
         map: map,
