@@ -426,7 +426,7 @@ button:focus,.btn:focus,.btn:active:focus {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  background: url("../img/kid.jpg") center center/cover no-repeat fixed;
+  background: url("../assets/Kid.jpg") center center/cover no-repeat fixed;
 }
 
 
