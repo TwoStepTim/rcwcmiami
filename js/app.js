@@ -51,7 +51,7 @@ function initializeMap() {
         lat: 25.711258201855323,
         lng:  -80.28372642210127
     };
-    var api_key = 'AIzaSyDaLNdW2DwXDOch4rEs9C0hP-Amc4RVYPE ';
+    var api_key ='AIzaSyDaLNdW2DwXDOch4rEs9C0hP-Amc4RVYPE';
     var map = new google.maps.Map(document.getElementById('googleMap'), {
         zoom: 18,
         center: location
