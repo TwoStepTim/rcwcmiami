@@ -426,7 +426,7 @@ button:focus,.btn:focus,.btn:active:focus {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  background: url("../assets/Kid.jpg") center center/cover no-repeat fixed;
+  background: url("/img/bk.JPG") center center/cover no-repeat fixed;
 }
 
 .jumbotron::before {
