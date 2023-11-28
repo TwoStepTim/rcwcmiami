@@ -518,7 +518,7 @@ button:focus,.btn:focus,.btn:active:focus {
   margin-top: 40px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .jumbotron .content {
     min-height: auto;
   }
@@ -528,9 +528,8 @@ button:focus,.btn:focus,.btn:active:focus {
   .jumbotron .content h1 {
     font-size: 26px;
   }
-  .jumbotron {
-  
-    background: url("/img/bk.JPG") center center/cover no-repeat fixed;
+ .jumbotron {
+    background:#0062cc;
   }
   .jumbotron .content p.lead {
     font-size: 15px;
