@@ -528,7 +528,10 @@ button:focus,.btn:focus,.btn:active:focus {
   .jumbotron .content h1 {
     font-size: 26px;
   }
-
+  .jumbotron {
+  
+    background: url("/img/bk.JPG") center center/cover no-repeat fixed;
+  }
   .jumbotron .content p.lead {
     font-size: 15px;
   }
